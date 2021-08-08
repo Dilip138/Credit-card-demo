@@ -1,0 +1,87 @@
+ 
+  body {
+    font-family: sans-serif;
+    background-color: #eeeeee;
+    margin: 2rem;
+  }
+  
+  .fix-new {
+    font-size: 10px !important; /*we can easly change credit card size*/
+  }
+  
+  .card-fix.fix-new {
+    position: absolute;
+    top: 30px;
+  }
+
+  .container {
+    flex-direction: unset;
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+    .form-box {
+      margin-right: 0rem;
+      margin-top: 1rem;
+    }
+  }
+  
+  .card-new {
+    background: url(../assets/images/background.jpeg) !important;
+  }
+  
+  .form-box {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    padding: 10% 2rem 2rem 2rem;
+    position: relative;
+  }
+  
+  .input-text {
+    border: 1px solid #dddddd;
+    background: #fff;
+    padding: 0 1rem;
+    line-height: 3rem;
+    font-size: 1.1rem;
+    border-radius: 0.1rem;
+    width: 93.5%;
+    margin: 1rem 0;
+    color: #666666;
+    margin-right: 10px;
+    outline: 0;
+  }
+  
+  .btn {
+    padding: 1rem 1rem;
+    border: 0;
+    background: #1496d3;
+    color: #ffffff;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  .semi {
+    width: 50%;
+  }
+
+  .semi-last {
+    margin-right: 0px;
+  }
+  
+  .flex-wrapper {
+    display: flex;
+  }
+  
+  .flex-wrapper div {
+    margin-right: 2rem;
+  }
+  
+  .error {
+    background-color: rgb(247, 144, 144);
+  }

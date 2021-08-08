@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { HunelProvider, HunelCreditCard } from "reactjs-credit-card";
+
+const hunel = new HunelCreditCard({
+  middlePartHide: true, //set true to mask credit card number on the card
+});
+
 ReactDOM.render(
-  <React.StrictMode>
+  <HunelProvider config={hunel}>
     <App />
-  </React.StrictMode>,
+    </HunelProvider>,
   document.getElementById('root')
 );
 
